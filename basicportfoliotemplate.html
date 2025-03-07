@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisa Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <!-- <div class="container"> -->
+            <a class="navbar-brand" href="#">Anisa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Anisa Stedmire</h1>
+            <p class="lead">Providing services since </p>
+            <a href="#contact" class="btn btn-primary">Contact</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>HELLO SPAN</span>
+                    <h1>HELLO H1</h1>
+                    <h2>HELLO SPAN H2</h2>
+                    <h3>HELLO SPAN H3</h3>
+                    <h4>HELLO SPAN H4</h4>
+                    <h5>HELLO SPAN H5</h5>
+                    <h6>HELLO SPAN H6</h6>
+                    <h2>Welcome</h2>
+                    <p>Public relations / media content</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tempora et, atque at libero est, earum ex fugiat numquam impedit rerum distinctio placeat, consequatur illo minus sed a nam ipsum!</p>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/Porter Airlines.png" alt="airplane" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <!-- Service Item -->
+                <div class="col-md-4">
+                    <h3>Web Content</h3>
+                    <p>Designing and maintaing web content</p>
+                    <a href="#" class="btn btn-outline-primary">Learn more</a>
+                </div>
+                <!-- Repeat for other portfolio -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <!-- Skills Member -->
+                <div class="col-md-3">
+                    <img src="path-to-Skills-member-photo.jpg" alt="Skills Img" class="img-fluid rounded-circle">
+                    <h4>Title</h4>
+                    <p>Skills content</p>
+                </div>
+                <!-- Repeat for other Skills  -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <p>Example
+                <br><br>
+            Is this the next line?</p>
+            <br>
+            <br>
+            <p>Example</p>
+
+<ul>
+    <li>Email: </li>
+    <li>Phone: </li>
+    <li>LinkedIn: </li>
+    <li>Github: </li>
+</ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2025 Anisa Stedmire All rights reserved.</p>
+        </div>
+    </footer>
+
+<style>
+    /* Hero Section - Parallax Effect */
+.hero {
+    position: relative;
+    background-image: url('https://wbcomdesigns.com/wp-content/uploads/2019/06/Hero-Images-1.jpg'); /* Update with correct image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* KEY for the Parallax Effect */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+.hero .container {
+    position: relative;
+    z-index: 1; /* Ensures text appears above overlay */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+h1{
+    color:pink;
+}
+ul li{
+    text-decoration:none !important;
+}
+</style>
+ 
